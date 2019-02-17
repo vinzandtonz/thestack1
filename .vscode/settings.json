@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "connectionTimeout": 15,
+            "database": "vinzandt_onz_db",
+            "dialect": "MSSQL",
+            "domain": null,
+            "name": "a2hosting",
+            "password": "Db4shawn@2",
+            "port": 1433,
+            "server": "mi3-wdb2.a2hosting.com",
+            "username": "vinzandt_onz"
+        }
+    ]
+}
