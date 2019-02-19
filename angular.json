@@ -169,6 +169,138 @@
           }
         }
       }
+    },
+    "waytoorganic": {
+      "root": "projects/waytoorganic/",
+      "sourceRoot": "projects/waytoorganic/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/waytoorganic",
+            "index": "projects/waytoorganic/src/index.html",
+            "main": "projects/waytoorganic/src/main.ts",
+            "polyfills": "projects/waytoorganic/src/polyfills.ts",
+            "tsConfig": "projects/waytoorganic/tsconfig.app.json",
+            "assets": [
+              "projects/waytoorganic/src/favicon.ico",
+              "projects/waytoorganic/src/assets"
+            ],
+            "styles": [
+              "projects/waytoorganic/src/styles.scss"
+            ],
+            "scripts": [],
+            "es5BrowserSupport": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/waytoorganic/src/environments/environment.ts",
+                  "with": "projects/waytoorganic/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "waytoorganic:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "waytoorganic:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "waytoorganic:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/waytoorganic/src/test.ts",
+            "polyfills": "projects/waytoorganic/src/polyfills.ts",
+            "tsConfig": "projects/waytoorganic/tsconfig.spec.json",
+            "karmaConfig": "projects/waytoorganic/karma.conf.js",
+            "styles": [
+              "projects/waytoorganic/src/styles.scss"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/waytoorganic/src/favicon.ico",
+              "projects/waytoorganic/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/waytoorganic/tsconfig.app.json",
+              "projects/waytoorganic/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "waytoorganic-e2e": {
+      "root": "projects/waytoorganic-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/waytoorganic-e2e/protractor.conf.js",
+            "devServerTarget": "waytoorganic:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "waytoorganic:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/waytoorganic-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "thestack"

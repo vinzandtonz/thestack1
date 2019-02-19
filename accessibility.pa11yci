@@ -1,0 +1,13 @@
+{
+  "defaults": {
+    "timeout": 10000,
+    "wait": 2000,
+    "ignore": [ 
+      "notice"
+    ]
+  },
+  "urls": [ 
+    "http://localhost:4200",
+    "http://athaata.com" 
+  ]
+}
