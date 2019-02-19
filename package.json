@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compodoc": "npx compodoc --tsconfig src/tsconfig.app.json --serve --port 9600 --open",
-    "pa11y": "npm run build -- --prod && npx pa11y-ci --config accessibility.pa11yci"
+    "pa11y": "npm run build -- --prod && npx pa11y-ci --config .pa11yci"
   },
   "private": true,
   "dependencies": {
