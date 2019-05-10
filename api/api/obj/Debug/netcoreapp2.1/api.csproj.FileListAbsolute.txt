@@ -1,0 +1,14 @@
+/Users/shawntony/projects/mine/thestack/api/api/bin/Debug/netcoreapp2.1/api.deps.json
+/Users/shawntony/projects/mine/thestack/api/api/bin/Debug/netcoreapp2.1/api.runtimeconfig.json
+/Users/shawntony/projects/mine/thestack/api/api/bin/Debug/netcoreapp2.1/api.runtimeconfig.dev.json
+/Users/shawntony/projects/mine/thestack/api/api/bin/Debug/netcoreapp2.1/api.dll
+/Users/shawntony/projects/mine/thestack/api/api/bin/Debug/netcoreapp2.1/api.pdb
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.csprojAssemblyReference.cache
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.csproj.CoreCompileInputs.cache
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.RazorAssemblyInfo.cache
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.RazorAssemblyInfo.cs
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.AssemblyInfoInputs.cache
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.AssemblyInfo.cs
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.RazorTargetAssemblyInfo.cache
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.dll
+/Users/shawntony/projects/mine/thestack/api/api/obj/Debug/netcoreapp2.1/api.pdb
